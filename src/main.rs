@@ -43,26 +43,35 @@ mod tests {
     }
 
     #[test]
-    fn part_one_on_test() -> Result<()> {
-        let answer = part_one(&TEST)?;
+    fn test_one() -> Result<()> {
+        let answer = super::part_one(&TEST)?;
         assert_eq!(answer, 0);
         Ok(())
     }
+
+    // Use "cargo test --release -- part_one --nocapture" to print the time
     #[test]
-    fn part_one_on_input() -> Result<()> {
-        let answer = part_one(&INPUT)?;
+    fn part_one() -> Result<()> {
+        let t = std::time::Instant::now();
+        let answer = super::part_one(&INPUT)?;
+        eprintln!("Part one took {:0.2?}", t.elapsed());
         assert_eq!(answer, 0);
         Ok(())
     }
+
     #[test]
-    fn part_two_on_test() -> Result<()> {
-        let answer = part_two(&TEST)?;
+    fn test_two() -> Result<()> {
+        let answer = super::part_two(&TEST)?;
         assert_eq!(answer, 0);
         Ok(())
     }
+
+    // Use "cargo test --release -- part_two --nocapture" to print the time
     #[test]
-    fn part_two_on_input() -> Result<()> {
-        let answer = part_two(&INPUT)?;
+    fn part_two() -> Result<()> {
+        let t = std::time::Instant::now();
+        let answer = super::part_two(&INPUT)?;
+        eprintln!("Part two took {:0.2?}", t.elapsed());
         assert_eq!(answer, 0);
         Ok(())
     }
