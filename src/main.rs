@@ -3,15 +3,15 @@ use std::io::{self, Read};
 
 struct Input {}
 
-fn parse_buffer(buffer: &str) -> Result<Input> {
+fn parse_buffer(_buffer: &str) -> Result<Input> {
     Ok(Input {})
 }
 
-fn part_one(input: &Input) -> Result<i128> {
+fn part_one(_input: &Input) -> Result<i128> {
     Ok(0)
 }
 
-fn part_two(input: &Input) -> Result<i128> {
+fn part_two(_input: &Input) -> Result<i128> {
     Ok(0)
 }
 
