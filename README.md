@@ -1,5 +1,7 @@
 # cargo_aoc_template
 
+🎄⭐🎄⭐🎄 Advent of Code 🎄⭐🎄⭐🎄
+
 This is a basic rust template for solving AdventOfCode (aoc) tasks.
 It is meant to be used with [cargo generate](https://cargo-generate.github.io/cargo-generate/index.html).
 
@@ -10,7 +12,7 @@ cargo generate -f https://github.com/jgpr-code/cargo_aoc_template.git
 ```
 
 *Note*: The -f flag disables automatic renaming of the project name to
-kebab-case.
+kebab-case🥙.
 
 ## Setup as favorite
 
@@ -32,7 +34,7 @@ Afterwards usage simply becomes:
 cargo generate -f aoc
 ```
 
-Way easier to remember. Nice!
+Way easier to remember. Nice👍
 
 ## How to use this template
 
@@ -42,4 +44,5 @@ Way easier to remember. Nice!
    a customized ``Input`` struct
 3. Work with the ``Input`` struct on the solutions for ``part_one`` and
    ``part_two``
-4. Test your solution with the already present tests😀
+4. Test your solution with the already present tests
+5. ⭐⭐
