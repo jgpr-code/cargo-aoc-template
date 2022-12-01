@@ -40,9 +40,9 @@ Way easier to remember. Nice👍
 
 1. Populate the contents of ``input.txt`` and ``test.txt`` with your input
    from the website (``test.txt`` is optional for examples directly in the text)
-2. Write an input parser in the function ``parse_buffer`` returning
-   a customized ``Input`` struct
-3. Work with the ``Input`` struct on the solutions for ``part_one`` and
+2. Write an input parser in the function ``parse_input`` returning
+   a customized ``TaskData`` struct (feel free to rename it)
+3. Work with ``parse_input`` and ``TaskData`` struct on the solutions for ``part_one`` and
    ``part_two``
 4. Test your solution with the already present tests
 5. ⭐⭐

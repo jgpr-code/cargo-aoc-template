@@ -1,26 +1,27 @@
 use anyhow::Result;
 use std::io::{self, Read};
 
-struct Input {}
+struct TaskData {}
 
-fn parse_buffer(_buffer: &str) -> Result<Input> {
-    Ok(Input {})
+fn parse_input(_buffer: &str) -> Result<TaskData> {
+    Ok(TaskData {})
 }
 
-fn part_one(_input: &Input) -> Result<i128> {
+fn part_one(input: &str) -> Result<i128> {
+    let _ = parse_input(input);
     Ok(0)
 }
 
-fn part_two(_input: &Input) -> Result<i128> {
+fn part_two(input: &str) -> Result<i128> {
+    let _ = parse_input(input);
     Ok(0)
 }
 
 fn main() -> Result<()> {
     let mut buffer = String::new();
     io::stdin().read_to_string(&mut buffer)?;
-    let input = parse_buffer(&buffer)?;
-    println!("Part one: {}", part_one(&input)?);
-    println!("Part two: {}", part_two(&input)?);
+    println!("Part one: {}", part_one(&buffer)?);
+    println!("Part two: {}", part_two(&buffer)?);
     Ok(())
 }
 
@@ -31,15 +32,13 @@ mod tests {
     use std::fs;
 
     lazy_static! {
-        static ref TEST: Input = read_from_file("test.txt");
-        static ref INPUT: Input = read_from_file("input.txt");
+        static ref TEST: String = read_from_file("test.txt");
+        static ref INPUT: String = read_from_file("input.txt");
     }
 
-    fn read_from_file(filename: &str) -> Input {
-        let buffer = fs::read_to_string(filename)
-            .unwrap_or_else(|msg| panic!("error reading {}: {}", filename, msg));
-
-        parse_buffer(&buffer).unwrap_or_else(|msg| panic!("error parsing {}: {}", filename, msg))
+    fn read_from_file(filename: &str) -> String {
+        fs::read_to_string(filename)
+            .unwrap_or_else(|msg| panic!("error reading {}: {}", filename, msg))
     }
 
     #[test]
