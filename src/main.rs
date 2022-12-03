@@ -8,12 +8,12 @@ fn parse_input(_buffer: &str) -> Result<TaskData> {
 }
 
 fn part_one(input: &str) -> Result<i128> {
-    let _ = parse_input(input);
+    let _ = parse_input(input)?;
     Ok(-1)
 }
 
 fn part_two(input: &str) -> Result<i128> {
-    let _ = parse_input(input);
+    let _ = parse_input(input)?;
     Ok(-1)
 }
 
