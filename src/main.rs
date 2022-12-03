@@ -3,7 +3,7 @@ use std::io::{self, Read};
 
 struct TaskData {}
 
-fn parse_input(_buffer: &str) -> Result<TaskData> {
+fn parse_input(_input: &str) -> Result<TaskData> {
     Ok(TaskData {})
 }
 
@@ -18,10 +18,10 @@ fn part_two(input: &str) -> Result<i128> {
 }
 
 fn main() -> Result<()> {
-    let mut buffer = String::new();
-    io::stdin().read_to_string(&mut buffer)?;
-    println!("Part one: {}", part_one(&buffer)?);
-    println!("Part two: {}", part_two(&buffer)?);
+    let mut input = String::new();
+    io::stdin().read_to_string(&mut input)?;
+    println!("Part one: {}", part_one(&input)?);
+    println!("Part two: {}", part_two(&input)?);
     Ok(())
 }
 
