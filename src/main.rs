@@ -20,8 +20,14 @@ fn part_two(input: &str) -> Result<i128> {
 fn main() -> Result<()> {
     let mut input = String::new();
     io::stdin().read_to_string(&mut input)?;
-    println!("Part one: {}", part_one(&input)?);
-    println!("Part two: {}", part_two(&input)?);
+    let t = std::time::Instant::now();
+    let part_one = part_one(&input)?;
+    let elapsed = t.elapsed();
+    println!("Part one: {} in {:0.2?}", part_one, elapsed);
+    let t = std::time::Instant::now();
+    let part_two = part_two(&input)?;
+    let elapsed = t.elapsed();
+    println!("Part two: {} in {:0.2?}", part_two, elapsed);
     Ok(())
 }
 
