@@ -1,5 +1,7 @@
 # cargo_aoc_template
 
+WARNING: THIS IS CURRENTLY NO LONGER UP TO DATE!
+
 🎄⭐🎄⭐🎄 Advent of Code 🎄⭐🎄⭐🎄
 
 This is a basic rust template for solving AdventOfCode (aoc) tasks.
@@ -36,7 +38,7 @@ cargo generate -f aoc
 
 Way easier to remember. Nice👍
 
-## How to use this template
+## How to use this template (TODO no longer valid)
 
 1. Populate the contents of ``input.txt`` and ``test.txt`` with your input
    from the website (``test.txt`` is optional for examples directly in the text)
