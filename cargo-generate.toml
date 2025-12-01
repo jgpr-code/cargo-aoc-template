@@ -1,4 +1,5 @@
 [template]
+exclude = [ "*.rs" ]
 ignore = [
     ".gitignore",
     "README.md",
